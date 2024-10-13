@@ -26,12 +26,18 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           Padding(
               padding: const EdgeInsets.only(top:20, right: 10),
               child: TextButton(
-                onPressed: (){},
-                child: const Text("Skip",
+                onPressed: (){
+                  Navigator.pushReplacement(context, MaterialPageRoute(
+                      builder: (context)=> const LoginScreen(),
+                   ),
+                  );
+                },
+                child: const Text(
+                  "Skip",
                   style: TextStyle(
                       color: Colors.grey,
                       fontSize: 15,
-                      fontWeight: FontWeight.w500
+                      fontWeight: FontWeight.w500,
                   ),
                 ),
               )
@@ -47,6 +53,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             controller: _pageController,
             onPageChanged: (int page){
               currentIndex = page;
+              setState(() {});
             },
             children: [
              CreateOnboardingPage(
