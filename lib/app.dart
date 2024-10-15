@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plants_app/ui/screens/main_bottom_nav_screen.dart';
 import 'package:plants_app/ui/screens/onboarding_screen.dart';
 
 class PlantsApp extends StatelessWidget {
@@ -7,10 +8,14 @@ class PlantsApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Plants App',
       debugShowCheckedModeBanner: false,
-      home: OnboardingScreen(),
+      theme: ThemeData(
+        scaffoldBackgroundColor: Colors.white
+      ),
+      //home: const OnboardingScreen(),
+      home: MainBottomNavScreen(),
     );
   }
 }
