@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:plants_app/resources/colors/app_colors.dart';
+import 'package:plants_app/ui/widgets/new_plant_card.dart';
 import 'package:plants_app/ui/widgets/plant_card.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -13,6 +14,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   final TextEditingController searchController = TextEditingController();
   int _selectedIndex = 0;
+
 
   //Plants category
   final List<String> _plantTypes = const [
@@ -33,6 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Padding(
           padding: const EdgeInsets.all(20.0),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
 
               // 1st search Box......section
@@ -93,6 +96,17 @@ class _HomeScreenState extends State<HomeScreen> {
               const SizedBox(height: 20),
               // 3rd plants card ....
               const PlantCard(),
+              const SizedBox(height: 20),
+              const Text(
+                "New Plants",
+                style: TextStyle(
+                   fontSize: 17,
+                   fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(height: 10),
+              // 4th New plants card ....
+              const NewPlantCard(),
 
             ],
           ),

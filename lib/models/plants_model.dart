@@ -1,5 +1,6 @@
 
 class PlantsModel {
+
   final int plantId;
   final int price;
   final String size;
