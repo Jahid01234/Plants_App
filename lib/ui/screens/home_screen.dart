@@ -15,7 +15,6 @@ class _HomeScreenState extends State<HomeScreen> {
   final TextEditingController searchController = TextEditingController();
   int _selectedIndex = 0;
 
-
   //Plants category
   final List<String> _plantTypes = const [
     'Recommended',
@@ -97,8 +96,7 @@ class _HomeScreenState extends State<HomeScreen> {
               // 3rd plants card ....
               const PlantCard(),
               const SizedBox(height: 20),
-              const Text(
-                "New Plants",
+              const Text( "New Plants",
                 style: TextStyle(
                    fontSize: 17,
                    fontWeight: FontWeight.bold,
@@ -107,7 +105,6 @@ class _HomeScreenState extends State<HomeScreen> {
               const SizedBox(height: 10),
               // 4th New plants card ....
               const NewPlantCard(),
-
             ],
           ),
         ),

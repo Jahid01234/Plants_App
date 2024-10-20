@@ -1,6 +1,7 @@
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
+import 'package:plants_app/models/plants_model.dart';
 import 'package:plants_app/resources/colors/app_colors.dart';
 import 'package:plants_app/ui/screens/cart_screen.dart';
 import 'package:plants_app/ui/screens/favourite_screen.dart';
@@ -17,14 +18,20 @@ class MainBottomNavScreen extends StatefulWidget {
 
 class _MainBottomNavScreenState extends State<MainBottomNavScreen> {
   int _bottomNavIndex = 0;
+  List<PlantsModel> favourites = [];
+  List<PlantsModel> myCart = [];
 
-  // List of widget
-  List<Widget> pages = const [
-    HomeScreen(),
-    FavouriteScreen(),
-    CartScreen(),
-    ProfileScreen()
-  ];
+  // Convert List of widget page to widget function page
+  List<Widget> pages() {
+    return [
+      const HomeScreen(),
+      FavouriteScreen(favouritePlants: favourites),
+      CartScreen(addToCartPlants: myCart),
+      const ProfileScreen()
+     ];
+    }
+
+
 
   //List of the pages icons
   List<IconData> iconList = [
@@ -69,7 +76,7 @@ class _MainBottomNavScreenState extends State<MainBottomNavScreen> {
        ),
        body: IndexedStack(
         index: _bottomNavIndex,
-        children: pages,
+        children: pages(),
       ),
        floatingActionButton: FloatingActionButton(
          backgroundColor: AppColors.primaryColor,
@@ -99,6 +106,11 @@ class _MainBottomNavScreenState extends State<MainBottomNavScreen> {
          activeIndex: _bottomNavIndex,
          onTap: (index){
            _bottomNavIndex  = index;
+           final List<PlantsModel> favouritePlants = PlantsModel.getFavouritedPlants();
+           final List<PlantsModel> cartPlants = PlantsModel.addedToCartPlants();
+
+           favourites = favouritePlants;
+           myCart = cartPlants;
            setState(() {});
          },
        ),
