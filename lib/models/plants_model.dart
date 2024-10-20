@@ -42,8 +42,11 @@ class PlantsModel {
         temperature: '23 - 34',
         imageURL: 'assets/images/plant-one.png',
         description:
-        'This plant is one of the best plant. It grows in most of the regions in the world and can survive'
-            'even the harshest weather condition.',
+        'Plants are really important for the planet and for all living things. '
+            'Plants absorb carbon dioxide and release oxygen from their leaves, '
+            'which humans and other animals need to breathe. Living things need '
+            'plants to live - they eat them and live in them. Plants help to clean'
+            ' water too.',
         isFavourite: true,
         isSelected: false,
     ),
@@ -58,8 +61,11 @@ class PlantsModel {
         temperature: '19 - 22',
         imageURL: 'assets/images/plant-two.png',
         description:
-        'This plant is one of the best plant. It grows in most of the regions in the world and can survive'
-            'even the harshest weather condition.',
+        'Plants are really important for the planet and for all living things. '
+            'Plants absorb carbon dioxide and release oxygen from their leaves, '
+            'which humans and other animals need to breathe. Living things need '
+            'plants to live - they eat them and live in them. Plants help to clean'
+            ' water too.',
         isFavourite: false,
         isSelected: false,
     ),
@@ -74,8 +80,11 @@ class PlantsModel {
         temperature: '22 - 25',
         imageURL: 'assets/images/plant-three.png',
         description:
-        'This plant is one of the best plant. It grows in most of the regions in the world and can survive'
-            'even the harshest weather condition.',
+        'Plants are really important for the planet and for all living things. '
+            'Plants absorb carbon dioxide and release oxygen from their leaves, '
+            'which humans and other animals need to breathe. Living things need '
+            'plants to live - they eat them and live in them. Plants help to clean'
+            ' water too.',
         isFavourite: false,
         isSelected: false,
     ),
@@ -90,8 +99,11 @@ class PlantsModel {
         temperature: '23 - 28',
         imageURL: 'assets/images/plant-one.png',
         description:
-        'This plant is one of the best plant. It grows in most of the regions in the world and can survive'
-            'even the harshest weather condition.',
+        'Plants are really important for the planet and for all living things. '
+            'Plants absorb carbon dioxide and release oxygen from their leaves, '
+            'which humans and other animals need to breathe. Living things need '
+            'plants to live - they eat them and live in them. Plants help to clean'
+            ' water too.',
         isFavourite: false,
         isSelected: false,
     ),
@@ -106,8 +118,11 @@ class PlantsModel {
         temperature: '12 - 16',
         imageURL: 'assets/images/plant-four.png',
         description:
-        'This plant is one of the best plant. It grows in most of the regions in the world and can survive'
-            'even the harshest weather condition.',
+        'Plants are really important for the planet and for all living things. '
+            'Plants absorb carbon dioxide and release oxygen from their leaves, '
+            'which humans and other animals need to breathe. Living things need '
+            'plants to live - they eat them and live in them. Plants help to clean'
+            ' water too.',
         isFavourite: true,
         isSelected: false,
     ),
@@ -122,8 +137,11 @@ class PlantsModel {
         temperature: '15 - 18',
         imageURL: 'assets/images/plant-five.png',
         description:
-        'This plant is one of the best plant. It grows in most of the regions in the world and can survive'
-            'even the harshest weather condition.',
+        'Plants are really important for the planet and for all living things. '
+            'Plants absorb carbon dioxide and release oxygen from their leaves, '
+            'which humans and other animals need to breathe. Living things need '
+            'plants to live - they eat them and live in them. Plants help to clean'
+            ' water too.',
         isFavourite: false,
         isSelected: false,
     ),
@@ -138,8 +156,11 @@ class PlantsModel {
         temperature: '23 - 26',
         imageURL: 'assets/images/plant-six.png',
         description:
-        'This plant is one of the best plant. It grows in most of the regions in the world and can survive'
-            'even the harshest weather condition.',
+        'Plants are really important for the planet and for all living things. '
+            'Plants absorb carbon dioxide and release oxygen from their leaves, '
+            'which humans and other animals need to breathe. Living things need '
+            'plants to live - they eat them and live in them. Plants help to clean'
+            ' water too.',
         isFavourite: false,
         isSelected: false,
     ),
@@ -154,8 +175,11 @@ class PlantsModel {
         temperature: '21 - 24',
         imageURL: 'assets/images/plant-seven.png',
         description:
-        'This plant is one of the best plant. It grows in most of the regions in the world and can survive'
-            'even the harshest weather condition.',
+        'Plants are really important for the planet and for all living things. '
+            'Plants absorb carbon dioxide and release oxygen from their leaves, '
+            'which humans and other animals need to breathe. Living things need '
+            'plants to live - they eat them and live in them. Plants help to clean'
+            ' water too.',
         isFavourite: false,
         isSelected: false,
     ),
@@ -170,8 +194,11 @@ class PlantsModel {
         temperature: '21 - 25',
         imageURL: 'assets/images/plant-eight.png',
         description:
-        'This plant is one of the best plant. It grows in most of the regions in the world and can survive'
-            'even the harshest weather condition.',
+        'Plants are really important for the planet and for all living things. '
+            'Plants absorb carbon dioxide and release oxygen from their leaves, '
+            'which humans and other animals need to breathe. Living things need '
+            'plants to live - they eat them and live in them. Plants help to clean'
+            ' water too.',
         isFavourite: false,
         isSelected: false,
     ),
