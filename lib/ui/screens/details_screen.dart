@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:plants_app/models/plants_model.dart';
 import 'package:plants_app/resources/colors/app_colors.dart';
 import 'package:plants_app/ui/widgets/plant_feature.dart';
