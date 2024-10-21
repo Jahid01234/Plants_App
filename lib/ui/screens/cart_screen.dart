@@ -17,11 +17,14 @@ class CartScreen extends StatefulWidget {
 
 class _CartScreenState extends State<CartScreen> {
 
+  // Here Calculate Total Price, when increase and decrease price
   int calculateTotalPrice() {
     return widget.addToCartPlants.fold(0, (sum, plant) {
       return sum + plant.price;
     });
   }
+
+
 
 
   @override
