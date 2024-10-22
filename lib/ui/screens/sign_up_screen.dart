@@ -2,8 +2,6 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:plants_app/resources/colors/app_colors.dart';
-import 'package:plants_app/ui/screens/forget_password_screen.dart';
-import 'package:plants_app/ui/screens/main_bottom_nav_screen.dart';
 import 'package:plants_app/ui/screens/sign_in_screen.dart';
 import 'package:plants_app/ui/widgets/custom_elevated_button.dart';
 import 'package:plants_app/ui/widgets/custom_text_form_field.dart';
@@ -58,7 +56,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                        }
                        return null;
                      },
-                     keyboardType: TextInputType.text,
+                     keyboardType: TextInputType.emailAddress,
                      hintText: "Enter your email",
                      prefixIcon: Icons.email,
                    ),
@@ -177,7 +175,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   const SizedBox(height: 10),
                   // 7th Sign in Google Button part
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+                    padding: const EdgeInsets.symmetric(horizontal:10, vertical:10),
                     decoration: BoxDecoration(
                       border: Border.all(
                         color: AppColors.primaryColor.withOpacity(0.5),

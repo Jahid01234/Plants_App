@@ -56,7 +56,7 @@ class _SignInScreenState extends State<SignInScreen> {
                        }
                        return null;
                      },
-                     keyboardType: TextInputType.text,
+                     keyboardType: TextInputType.emailAddress,
                      hintText: "Enter your email",
                      prefixIcon: Icons.email,
                    ),
@@ -125,7 +125,7 @@ class _SignInScreenState extends State<SignInScreen> {
                                            type: PageTransitionType.bottomToTop,
                                      ),
                                    );
-                                 }
+                                 },
                             ),
                           ],
                         ),
