@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:plants_app/ui/screens/main_bottom_nav_screen.dart';
-import 'package:plants_app/ui/screens/onboarding_screen.dart';
+import 'package:plants_app/ui/screens/sign_in_screen.dart';
 
 class PlantsApp extends StatelessWidget {
   const PlantsApp({super.key});
@@ -15,7 +15,8 @@ class PlantsApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white
       ),
       //home: const OnboardingScreen(),
-      home: MainBottomNavScreen(),
+      home: SignInScreen(),
+      //home:MainBottomNavScreen()
     );
   }
 }

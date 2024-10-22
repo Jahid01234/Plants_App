@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:plants_app/resources/colors/app_colors.dart';
 import 'package:plants_app/resources/strings/app_strings.dart';
-import 'package:plants_app/ui/screens/login_screen.dart';
+import 'package:plants_app/ui/screens/sign_in_screen.dart';
 import 'package:plants_app/ui/widgets/create_onboarding_page.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -27,7 +27,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               child: TextButton(
                 onPressed: (){
                   Navigator.pushReplacement(context, MaterialPageRoute(
-                      builder: (context)=> const LoginScreen(),
+                      builder: (context)=> const SignInScreen(),
                    ),
                   );
                 },
@@ -101,7 +101,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     );
                   } else{
                     Navigator.pushReplacement(context, MaterialPageRoute(
-                        builder: (context)=> const LoginScreen(),
+                        builder: (context)=> const SignInScreen(),
                       ),
                     );
                   }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:plants_app/models/plants_model.dart';
 import 'package:plants_app/resources/colors/app_colors.dart';
+import 'package:plants_app/ui/widgets/custom_elevated_button.dart';
 import 'package:plants_app/ui/widgets/plant_feature.dart';
 
 class DetailsScreen extends StatefulWidget {
@@ -245,17 +246,14 @@ class _DetailsScreenState extends State<DetailsScreen> {
                                      ),
                                    ),
                                  ),
+
                                  // 2nd 'BUY NOW', button
-                                 ElevatedButton(
-                                      style: ElevatedButton.styleFrom(
-                                        backgroundColor: AppColors.primaryColor.withOpacity(0.4),
-                                        foregroundColor: Colors.white,
-                                        shape: RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.circular(10)
-                                        )
-                                      ),
-                                     onPressed: (){},
-                                     child: const Text("BUY NOW"),
+                                 SizedBox(
+                                   width: 150,
+                                   child: CustomElevatedButton(
+                                     onTap: () {  },
+                                     title: "BUY NOW",
+                                   ),
                                  ),
 
                                ],
@@ -274,5 +272,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
     );
   }
 }
+
+
 
 
